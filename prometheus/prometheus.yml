@@ -1,0 +1,18 @@
+rule_files:
+  - 'alert.rules'
+
+alerting:
+  alertmanagers:
+    - scheme: http
+      static_configs:
+      - targets:
+        - "alertmanager:9093"
+
+scrape_configs:
+  - job_name: 'order-service'
+    scrape_interval: 5s
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['service_a:3001']
+        labels:
+          application: 'CB-serviceA-serviceB'
