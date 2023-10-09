@@ -1,5 +1,5 @@
 groups:
-- name: example
+- name: example_circuit_breaker
   rules:
 
   - alert: service_b_down
@@ -8,5 +8,5 @@ groups:
     labels:
       severity: page
     annotations:
-      summary: "Instance {{ $labels.instance }} down"
-      description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 10 seconds."
+      summary: "Service B down"
+      description: "Down for more than 10 seconds."
