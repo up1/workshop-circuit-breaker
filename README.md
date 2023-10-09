@@ -1,5 +1,6 @@
 # Demo circuit breaker
 * Services with NodeJS
+  * [Mollitia](https://genesys.github.io/mollitia/) :: JavaScript Resilience library
 * Appication metric with [Prometheus](https://prometheus.io/)
 * Alert system with [Alarm Manager](https://prometheus.io/docs/alerting/latest/alertmanager/)
 * Dashboard with [Grafana](https://grafana.com/)
