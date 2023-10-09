@@ -23,7 +23,11 @@ app.get('/orders', (req, res) => {
     } else {
         orders = orderList
     }
-    res.status(200).send(orders)
+    const codes = [200, 404, 500];
+    const randomIndex = Math.floor(Math.random() * codes.length);
+    const code = codes[randomIndex];
+
+    res.status(code).send(orders)
 })
 
 app.listen(3002, () => console.log('Service B running on port 3002'))

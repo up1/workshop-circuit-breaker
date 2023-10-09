@@ -33,6 +33,13 @@ $curl http://localhost:3002/orders?category=
 Call Metric of Circuit breaker
 * http://localhost:3001/metrics
 
+
+Try to load tests
+```
+$wrk -c 100 -t 5 -d 10s http://localhost:3001/orders?category=
+```
+
+
 ## Step 4 :: Start Prometheus and Alert Manager
 ```
 $docker compose build alertmanager
