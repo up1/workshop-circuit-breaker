@@ -33,6 +33,9 @@ $curl http://localhost:3002/orders?category=
 Call Metric of Circuit breaker
 * http://localhost:3001/metrics
 
+List of metric names
+* total_failures
+
 
 Try to load tests
 ```
