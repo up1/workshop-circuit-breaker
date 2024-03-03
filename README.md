@@ -22,6 +22,9 @@ $docker compose ps
 NAME                IMAGE               COMMAND                  SERVICE             CREATED             STATUS              PORTS
 cb-service_a-1      cb-service_a        "docker-entrypoint.s…"   service_a           7 seconds ago       Up 7 seconds        0.0.0.0:3001->3001/tcp
 cb-service_b-1      cb-service_b        "docker-entrypoint.s…"   service_b           2 seconds ago       Up 2 seconds        0.0.0.0:3002->3002/tcp
+
+
+$docker compose logs --follow
 ```
 
 ## Step 3 :: Call API
